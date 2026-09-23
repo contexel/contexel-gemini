@@ -1,6 +1,6 @@
 {
   "name": "contexel",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "Your team's shared memory for Gemini CLI, alongside its own. Looks up what your team decided before answering about your work, and saves what you ask it to remember so your other AI apps and teammates can find it.",
   "contextFileName": "GEMINI.md",
   "mcpServers": {

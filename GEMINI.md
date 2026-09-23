@@ -40,8 +40,8 @@ reach. When unsure, leave the workspace out rather than guessing a shared one.
 
 ## Relaying an answer
 
-Answer the user from a result's readable text, not its structured fields. Every tool returns
-both; the fields are there for you to parse, not to quote.
+Tell the user what you found in plain words, never field names. The structured
+fields are there for you to parse, not to quote.
 
 ## Other tools
 
