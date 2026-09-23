@@ -12,6 +12,10 @@ Once it is installed, Gemini CLI will:
 - **Remember what you ask it to:** when you say "remember this", "note this" or "from now
   on", it saves the point to Contexel as well as to its own memory, so your other AI apps and
   your teammates can find it too. It saves only what you asked it to keep.
+- **Fix what is wrong:** when you say a saved memory is wrong or out of date, it corrects
+  that memory in Contexel, or retires it if it no longer holds. Depending on your access in
+  that workspace, a save or a fix lands at once or waits for a teammate's approval; Gemini
+  CLI tells you which.
 
 Contexel works alongside Gemini CLI's own memory (its GEMINI.md files). It never tells Gemini
 to stop using that memory; it keeps a shared copy that travels with you and your team.
@@ -48,8 +52,13 @@ it saves that to Contexel along with its own memory. Every result names the work
 from or went to, so you can always see where your memory lives.
 
 In Gemini CLI the Contexel tools appear with a `mcp_contexel_` prefix, for example
-`mcp_contexel_get_context` and `mcp_contexel_observe`. `/mcp` lists them and shows whether
-Contexel is connected.
+`mcp_contexel_get_context`, `mcp_contexel_remember` and `mcp_contexel_correct`. `/mcp` lists
+them and shows whether Contexel is connected.
+
+The extension connects with Contexel's everyday tools: look up, save, fix, check status,
+search and fetch. For every tool (briefings, history, review and curation), define the
+`contexel` server yourself in `~/.gemini/settings.json`, as in "Self-hosting Contexel" below,
+with `"httpUrl": "https://contexel.ai/mcp?tools=all"`.
 
 For project-specific rules (such as which workspace your team's knowledge belongs in), copy
 the rules text from the Contexel console's "Connect your agent" panel into your project's
