@@ -1,8 +1,8 @@
-# Contexel: the team's shared memory
+# Contexel: shared memory
 
-Contexel is this team's shared memory for AI. It returns only the context relevant to a
-task, with sources, and keeps what the user asks to remember so their other AI apps and
-teammates can find it. It works alongside your own memory: keep using your GEMINI.md memory
+Contexel is the user's shared memory for AI, at home or work. It returns only the context
+relevant to a task, with sources, and keeps what the user asks to remember so their other AI
+apps and their family or team can find it. It works alongside your own memory: keep using your GEMINI.md memory
 as you normally would.
 
 In Gemini CLI its tools are named `mcp_contexel_<tool>`, for example
@@ -11,9 +11,9 @@ connected or not signed in yet; the user can run `/mcp auth contexel`.
 
 ## Two rules
 
-- **RETRIEVE FIRST**: before answering about this team's or user's projects, decisions,
-  standards, conventions, or people, call `mcp_contexel_get_context` with a `task`; your
-  training won't include what they saved. Skip it for questions unrelated to their work.
+- **RETRIEVE FIRST**: before answering about the user's life, family, or work (their plans,
+  decisions, standards, or people), call `mcp_contexel_get_context` with a `task`; your
+  training won't include what they saved. Skip it for questions unrelated to them.
 - **REMEMBER into Contexel**: when the user says "remember", "note this", "save this", or
   "from now on", save it with `mcp_contexel_remember` right away (no lookup first), without
   asking, along with your own memory. Save only what the user asked to keep.
