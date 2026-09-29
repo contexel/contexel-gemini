@@ -13,9 +13,9 @@ Once it is installed, Gemini CLI will:
   on", it saves the point to Contexel as well as to its own memory, so your other AI apps and
   your teammates can find it too. It saves only what you asked it to keep.
 - **Fix what is wrong:** when you say a saved memory is wrong or out of date, it corrects
-  that memory in Contexel, or retires it if it no longer holds. Depending on your access in
-  that workspace, a save or a fix lands at once or waits for a teammate's approval; Gemini
-  CLI tells you which.
+  that memory in Contexel, or removes it if it no longer holds. A save or fix lands at once,
+  is queued for approval, or is refused if this connection can only view; the response says
+  which, and names the workspace.
 
 Contexel works alongside Gemini CLI's own memory (its GEMINI.md files). It never tells Gemini
 to stop using that memory; it keeps a shared copy that travels with you and your team.
