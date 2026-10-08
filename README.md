@@ -35,10 +35,10 @@ folder instead: `gemini extensions link /path/to/contexel-gemini`.
 
 ## Sign in on first use
 
-The extension points Gemini CLI at the hosted Contexel service. The first time Gemini CLI
-connects, Contexel asks it to sign in, and Gemini CLI opens your browser to the Contexel
-sign-in page. Sign in with your Contexel account and your workspace is picked for you. You can
-also start or repeat the sign-in yourself with `/mcp auth contexel` inside Gemini CLI.
+The extension points Gemini CLI at the hosted Contexel service. Gemini CLI does not sign in on
+its own: start it and run `/mcp auth contexel`. It opens your browser to the Contexel sign-in
+page. Sign in with your Contexel account and your workspace is picked for you. Run the same
+command again to repeat the sign-in.
 
 Browser sign-in needs a browser on the same machine. It does not work on a headless machine,
 over SSH without a forwarded display, or in a container without a browser. On those machines,
@@ -60,9 +60,8 @@ search and fetch. For every tool (briefings, history, review and curation), defi
 `contexel` server yourself in `~/.gemini/settings.json`, as in "Self-hosting Contexel" below,
 with `"httpUrl": "https://contexel.ai/mcp?tools=all"`.
 
-For project-specific rules (such as which workspace your team's knowledge belongs in), copy
-the rules text from the Contexel console's "Connect your agent" panel into your project's
-`GEMINI.md`.
+You don't need to add anything about your workspaces: Gemini CLI asks Contexel which ones it
+can reach (`mcp_contexel_status`), so nothing goes stale when you add, rename or archive one.
 
 ## Privacy
 

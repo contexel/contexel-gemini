@@ -21,6 +21,16 @@ connected or not signed in yet; the user can run `/mcp auth contexel`.
 When you merely learn a durable decision, standard, or lesson while working, OFFER at the end
 of the task to save it: ask first, never write silently.
 
+## Handing off where things stand
+
+When the user asks you to hand off, wrap up, or save where things stand, or when a stretch of
+work ends and the user agrees when you offer, save ONE note with `mcp_contexel_remember`: start
+it with `#handoff`, name the project or subject in `entities`, and say what is done, what is
+next, and what is still open (approaches that failed included, so nobody tries them again).
+Each new hand-off replaces the user's previous one on that subject; a teammate's stays. When
+work on that subject starts again, `mcp_contexel_get_context` shows the latest hand-off first,
+under "Where things stand".
+
 ## Fixing a memory that is wrong
 
 When the user says a saved memory is wrong or out of date, find it with
